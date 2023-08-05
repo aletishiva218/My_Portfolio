@@ -1,0 +1,733 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    /* background-image:linear-gradient(130deg,#e81cff,#40c9ff); */
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    background-color: rgb(0, 0, 0);
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    align-items: normal;
+    min-width: 392px;
+}
+
+
+nav {
+
+    width: 95%;
+    height: 15vh;
+    margin-top: 1.5vh;
+    box-shadow: 0 1px 4px 0px black;
+    border-radius: 20px;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0;
+    position: static;
+    top: 0;
+}
+
+
+nav ul {
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    list-style-type: none;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.lin a {
+    color: inherit;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 20px;
+    background: none;
+    color: #ffffffcd;
+
+}
+
+.lin a:hover {
+    transition: all 0.5s;
+    color: white;
+}
+
+.all-items {
+    height: 100%;
+    width: 95%;
+    display: grid;
+}
+
+.reveal-right {
+    opacity: 0;
+    transform: translateY(10vh);
+}
+
+.right-to-left {
+    transition: all 1s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.reveal-left {
+    opacity: 0;
+    transform: translateY(-10vh);
+}
+
+.left-to-right {
+    transition: all 1s;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.introduction-to-me {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    font-size: 250%;
+    padding-bottom: 20px;
+    height: 83.5vh;
+    width: 95vw;
+}
+
+.section-1 {
+    height: 95vh;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.intro {
+    height: 100%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Ysabeau', sans-serif;
+    font-weight: bolder;
+    color: #ffffffcd;
+    flex-direction: column;
+    justify-self: end;
+}
+
+.hello {
+    font-family: 'Ysabeau', sans-serif;
+    color: white;
+    margin-bottom: 20px;
+    font-size: 200%;
+}
+
+.image {
+    height: 100%;
+    width: 100%;
+    background-image: linear-gradient(#00000050, #00000050), url(per1.png);
+    background-repeat: no-repeat;
+    background-size: 80%;
+    background-position: center top;
+}
+
+.link-button {
+    text-decoration: none;
+    font-size: 0.5em;
+    color: #00b1f7;
+    margin-top: 4%;
+    padding: 15px 20px;
+    border-radius: 50px;
+    border: 2px solid #00b1f7;
+}
+
+.link-button:hover {
+    transition: all 0.4s;
+    color: black;
+    background-color: #00b1f7;
+}
+
+.first-project {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.533)), url(a\ car.png);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.first-project:hover {
+    transition: all 1s;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(a\ car.png);
+}
+
+.first-project a,
+.second-project a,
+.third-project a {
+    text-decoration: none;
+    font-size: 2em;
+    color: #025575;
+    padding: 3px 10px;
+    background-color: white;
+    border-radius: 50px;
+    font-weight: bolder;
+}
+
+.first-project a:hover,
+.second-project a:hover,
+.third-project a:hover {
+    transition: all 1s;
+    color: white;
+    background-color: #025575;
+}
+
+.first-project-intro {
+    background-color: white;
+    box-shadow: 0 0 10px 1px black;
+    position: relative;
+    width: 50%;
+    top: -15%;
+    left: 45%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    background: linear-gradient(136deg, #fdd692, #f7fba5);
+    z-index: 1;
+    padding: 0 10px;
+
+}
+
+.line-after-intro {
+    margin: 50px 0px;
+}
+
+.heading-line {
+    background-color: #00b1f7;
+    height: 10px;
+    border-radius: 20px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.car-animation-heading {
+    color: darkgreen;
+    font-size: 1.5em;
+    font-family: 'Anton', sans-serif;
+}
+
+.double-quotes {
+    color: rgb(255, 0, 0);
+}
+
+.section-2 {
+    height: 95vh;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.section-3 {
+    height: 95vh;
+    width: 100%;
+    margin-top: 5vh;
+}
+
+.second-project {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.533)), url(https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/05/best-dinosaur-games-pc-dino-game.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left: 20%;
+
+}
+
+.second-project:hover {
+    transition: all 1s;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://www.pcgamesn.com/wp-content/sites/pcgamesn/2022/05/best-dinosaur-games-pc-dino-game.jpg);
+}
+
+.second-project-intro {
+    background-color: white;
+    box-shadow: 0 0 10px 1px black;
+    position: relative;
+    width: 50%;
+    top: -15%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 20px;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    background: linear-gradient(136deg, #fdd692, #f7fba5);
+    padding: 0 20px;
+}
+
+.arrow-up-hide {
+    display: none;
+}
+
+.arrow-up {
+    display: block;
+    left: 2vw;
+    bottom: 4vh;
+    position: fixed;
+    z-index: 2;
+    color: #00b1f7;
+    border-radius: 20px;
+    background-color: black;
+}
+
+.arrow-up:hover {
+    transition: all 0.5s;
+    color:black;
+    background-color: #00b1f7;
+}
+
+.third-project {
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.533)), url(https://www.cnet.com/a/img/resize/b20f2b84030420ff9152e25dabd8be35d1b574b8/hub/2014/08/01/7fee1a9f-0bce-4317-b839-7f315e3bcfd8/flappy-birds-family.png?auto=webp&width=1200);
+    background-position: center;
+    background-size: cover;
+    width: 80%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-project:hover {
+    transition: all 1s;
+    background: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(https://www.cnet.com/a/img/resize/b20f2b84030420ff9152e25dabd8be35d1b574b8/hub/2014/08/01/7fee1a9f-0bce-4317-b839-7f315e3bcfd8/flappy-birds-family.png?auto=webp&width=1200);
+}
+
+.third-project-intro {
+    background-color: white;
+    box-shadow: 0 0 10px 1px black;
+    position: relative;
+    width: 50%;
+    top: -15%;
+    left: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 20px;
+    font-weight: bold;
+    background: linear-gradient(136deg, #fdd692, #f7fba5);
+    padding: 0 20px;
+    padding-bottom: 10px;
+
+    font-size: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    .third-project {
+        margin-top: 250px;
+    }
+
+    .second-project {
+        margin-top: 100px;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .third-project {
+        margin-top: 400px;
+    }
+
+    .second-project {
+        margin-top: 200px;
+    }
+}
+
+@media only screen and (max-width:730px) {
+    .line-after-each-section {
+        display: none;
+    }
+}
+
+.light {
+    width: 0.7%;
+    background-color: white;
+    height: 100%;
+    box-shadow: 0 0 20px 13px white;
+    border-radius: 100%;
+    position: relative;
+    animation-name: light-animation;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes light-animation {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 99.3%;
+
+    }
+}
+.contactme {
+    position: fixed;
+    left: 1vw;
+    top: 35%;
+    writing-mode: vertical-rl;
+    color: #ffffffcd;
+    z-index: 5;
+}
+
+.line1 {
+    display: inline-block;
+    height: 15vh;
+    width: 3px;
+    background-color: #ffffffcd;
+    margin: 2vh 0;
+}
+
+a svg {
+    color: #ffffffcd;
+    margin: 2vh 0;
+}
+
+a svg:hover {
+    color: white;
+}
+
+.contactme a {
+    text-decoration: none;
+}
+
+.line {
+    height: 0.5vh;
+    width: 100%;
+    background-color: gray;
+    border-radius: 20px;
+    margin: 2vh 0;
+}
+
+.section1 {
+    
+    width: 100%;
+    /*  */
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr;
+
+}
+
+.my-intro {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.my-intro span {
+    font-family: 'Ysabeau', sans-serif;
+    color: #00b1f7;
+}
+
+.section1-intro,
+.section1-image {
+    width: 100%;
+    height: 100%;
+}
+
+.section1-image {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.section1-intro {
+    display: grid;
+    align-items: center;
+    font-size: 1.5em;
+}
+
+.section1-intro .section1-me {
+    color: #00b1f7;
+    color: #ffffffcd;
+    font-size: 2em;
+    align-self: self-end;
+}
+
+.section1-intro .section1-me-1 {
+    color: white;
+    align-self: self-start;
+}
+
+.line2 {
+    background-color: #00b1f7;
+    align-self: self-start;
+    margin-bottom: 10%;
+    height: 2px;
+    width: 100%;
+}
+
+
+.link-button-1 {
+    background-color: black;
+    border: 2px solid #00b1f7;
+    border-radius: 60px;
+    color: #00b1f7;
+    padding: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+.link-button-1:hover,.link-button-2:hover {
+    transition: all 0.5s;
+    background-color: #00b1f7;
+    color: black;
+}
+
+.top-down,
+.down-top {
+    transform: translateY(0%);
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+
+.color1 {
+    animation-name: slide-color;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    transform: translateY(-100%);
+}
+
+@keyframes slide-color {
+    0% {
+        transform: translateY(0);
+    }
+}
+
+.section1-image-1 {
+    background-image: linear-gradient(#00000093, #00000093), url(https://img.freepik.com/free-photo/front-view-stacked-books-graduation-cap-ladders-education-day_23-2149241014.jpg?w=2000);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    height: 50%;
+    width: 40%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+
+.image-2 {
+    background-image: linear-gradient(#00000093, #00000093), url(https://newlookschool.com/wp-content/uploads/2021/08/Knolage-and-Learning.jpg);
+    top: 40%;
+    left: 30%;
+    z-index: -1;
+}
+
+.color2 {
+    animation-name: slide-color;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    transform: translateY(100%);
+}
+
+@keyframes slide-color {
+    0% {
+        transform: translateY(0);
+    }
+}
+
+.section2-intro {
+    margin-left: 3%;
+}
+
+.section2-image-1 {
+    background-image: linear-gradient(#00000093, #00000093), url(https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
+    left: 90px;
+}
+
+.section2-image-2 {
+    background-image: linear-gradient(#00000093, #00000093), url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iAKWS2KbT8ug/v1/1200x-1.jpg);
+    top: 2%;
+}
+
+.section2-image-3 {
+    background-image: linear-gradient(#00000093, #00000093), url(https://i.natgeofe.com/k/825bd6d8-6daf-4019-8cab-9b4ed6c02545/tyrannosaurus-rex-closeup-jaws-walking_square.jpg);
+    left: 40%;
+}
+
+.section2-image {
+    height: 90%;
+    width: 100%;
+}
+
+.section3 {
+    height: 100vh;
+    width: 100%;
+    color: #ffffffcd;
+    font-size: 2em;
+    display: grid;
+    justify-content: center;
+    justify-items: center;
+}
+
+.content {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    height: 95vh;
+}
+
+.my-name {
+    color: #00b1f7;
+    align-self: self-start;
+}
+
+.my-photo {
+    background-image: url(https://www.shutterstock.com/image-vector/funny-cartoon-office-worker-various-260nw-95632537.jpg);
+    height: 200px;
+    width: 200px;
+    background-position: center top;
+    border-radius: 200px;
+}
+
+.my-information {
+    align-self: self-start;
+}
+
+.me {
+    align-self: self-start;
+}
+
+.college-name {
+    color: #00b1f7;
+    text-decoration: none;
+    border-bottom: 2px solid #00b1f7;
+}
+
+.college-name:hover {
+    color: #00b1f7c6;
+}
+
+.color-blue {
+    color: #00b1f7;
+    text-decoration: none;
+    border-bottom: 2px solid #00b1f7;
+}
+
+.color-blue:hover {
+    color: #00b1f7c6;
+}
+
+.aboutme {
+    font-family: 'Ysabeau', sans-serif;
+}
+
+.no-underline {
+    border-bottom: none;
+}
+
+.no-underline:hover {
+    color: #00b1f7;
+}
+
+.contact-me * {
+    height: 30px;
+    width: 30px;
+}
+
+.contact-me a {
+    text-decoration: none;
+    margin: 0 20px;
+}
+.link-button-2{
+background-color: black;
+    border: 2px solid #00b1f7;
+    border-radius: 60px;
+    color: #00b1f7;
+    padding: 10px;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+@media only screen and (max-width:689px) {
+    .introduction-to-me {
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        font-size: 250%;
+        padding-bottom: 20px;
+        height: 83.5vh;
+        width: 95vw;
+    }
+
+    .intro {
+        justify-self: center;
+    }
+
+    .image {
+        display: none;
+    }
+
+    .section1-image {
+        display: none;
+    }
+
+    .section1 {
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width:1049px){
+    .all-items{
+        padding-left: 5vw;
+    }
+}
+.hide-more-education{
+   display: none;
+}
+.display-more-education{
+    display: block;
+}
+.hide-more-project{
+    display: none;
+}
+.display-more-project{
+    display: block;
+}
+.hide-more-project a{
+    color: #00b1f7;
+}
