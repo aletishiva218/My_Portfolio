@@ -1,3 +1,4 @@
+
 html {
     scroll-behavior: smooth;
 }
@@ -141,7 +142,7 @@ nav ul {
 .image {
     height: 100%;
     width: 100%;
-    background-image: linear-gradient(#00000050, #00000050), url(per1.png);
+    background-image: linear-gradient(#00000050, #00000050), url(images/per1.png);
     background-repeat: no-repeat;
     background-size: 80%;
     background-position: center top;
@@ -575,18 +576,32 @@ a svg:hover {
 .section2-image-1 {
     background-image: linear-gradient(#00000093, #00000093), url(https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y2Fyc3xlbnwwfHwwfHx8MA%3D%3D&w=1000&q=80);
     left: 90px;
+    z-index: 3;
 }
 
 .section2-image-2 {
     background-image: linear-gradient(#00000093, #00000093), url(https://assets.bwbx.io/images/users/iqjWHBFdfxIU/iAKWS2KbT8ug/v1/1200x-1.jpg);
     top: 2%;
+   
 }
 
 .section2-image-3 {
     background-image: linear-gradient(#00000093, #00000093), url(https://i.natgeofe.com/k/825bd6d8-6daf-4019-8cab-9b4ed6c02545/tyrannosaurus-rex-closeup-jaws-walking_square.jpg);
     left: 40%;
+    z-index: 2;
 }
+.section2-image-4{
+    background-image: linear-gradient(#00000093, #00000093), url(https://cms-assets.themuse.com/media/lead/_1200x630_crop_center-center_82_none/15380.jpg?mtime=1568924980);
+    top: 60%;
+    left: 20%;
+    z-index: 2;
+}
+.section2-image-5{
+    background-image: linear-gradient(#00000093, #00000093), url(https://play-lh.googleusercontent.com/44uC2fp4fiz9rmM_M9mTT1JKjjic0AT4hllA2_K9z7h5tnXRqDsshCl_4FOJmk34Hoo);
+    top: 0%;
+    left:60%;
 
+}
 .section2-image {
     height: 90%;
     width: 100%;
